@@ -1,0 +1,67 @@
+.logo
+			{
+				width:300px;height:100px;padding:10px;
+			}
+			.nav_ul {
+			  font-family: 'Alef';
+			  font-size:1.2em;
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #015486;
+			}
+
+			.nav_ul li {
+			  float: left;
+			}
+
+			.nav_ul li a {
+				transition: 0.5s;
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			.nav_ul li a:hover {
+				font-weight:bold;
+				color:black;
+			  background-color: #FFE000;
+		}
+		.footer_table
+		{
+			font-size:1.2em;
+			width:400px;margin:auto;text-align:center;
+			color:white;
+			font-family:Alef;
+			padding:50px;
+		}
+		.footer_style
+		{
+			height:200px;width:100%;background:#007EB4;
+		}
+		.footer_table tr td
+		{
+			text-align:left;
+		}
+		.footer_table tr td a
+		{
+			text-decoration: none;
+			color:white;
+			transition: 03s;
+		}
+		.footer_table tr td a:hover
+		{
+
+			text-decoration: underline;
+		}
+		.main_p
+		{
+			font-family:Amaranth;font-size:3em;text-align: center;
+		}
+		.main_p span
+		{
+			font-weight:bold;color:#01A9DE;font-size:1.4em;
+		}

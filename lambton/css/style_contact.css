@@ -1,0 +1,21 @@
+.contact_data_outer_div
+			{
+				font-family: Amaranth;
+				width:50%;
+				margin:auto;
+				font-size:1.2em;
+			}
+			.captions
+			{
+				text-decoration: underline;
+				padding:10px;
+				text-align:center;
+				font-size: 2em;
+			}
+			.phone_list tr td
+			{	
+                font-family: Alef;
+				text-align: center;
+				padding:10px;
+				font-size:20px;
+			}

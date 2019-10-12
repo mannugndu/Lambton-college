@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>lambton college</title>
+		<link rel="stylesheet" type="text/css" href="css/style_main.css"><link rel="stylesheet" type="text/css" href="css/style_register.css">
+
+
+		<link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+	
+	<link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+  <script src="libraries/jquery.js"></script>
+  <script src="libraries/js/bootstrap.min.js"></script>
+
+
+</head>
+	<body style="margin:0px;">
+		<header>
+			<img src="images/logo.jpg" class="logo">
+			<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Lambton College</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       
+        <li class="active"><a href="index.html">Home</a></li>
+
+        <li>
+          <a href="register.html">Register </a>
+          
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <li><a href="about.html">about</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+		</header>
+
+
+		<main class="main_content" style="display:none">
+			
+			<div class="outer_box">
+				<span style="font-size: 2em;">Register</span>
+				<hr class="hr-text">
+
+				<div class="reg_form_div">
+<form action="registration_success.html" method="get" id="registration_form">
+					<table style="width:100%" class="names_container">
+						<tr>
+							<td>
+								<div id="name_field1">
+									<input type="text" placeholder="First Name" name="f_name" required>
+								</div>
+							</td>
+							<td>
+								<div>
+									<input type="text" placeholder="Last Name" name="l_name" required>
+								</div>
+							</td>
+						</tr>	
+					</table>
+
+					<div class="email_container">
+
+						<input type="email" placeholder="Enter Email Address" name="mail" required>
+					</div>
+
+					<div class="password_container">
+						<input type="password" placeholder="Enter Password" name="password" required>
+					</div>
+
+					<div class="confirm_password_container">
+						<input type="password" placeholder="Confirm Password" name="confirm_password" required>
+					</div>
+					<br>
+					<input type="checkbox" required>
+						I accept to the <span><a href="#">terms and conditions</a></span>
+					<br><br>
+					<div>
+						<input type="submit" class="register_button" value="REGISTER">
+					</div>
+</form>
+				</div>
+				
+
+			</div>
+
+
+		</main>
+
+
+<footer class="footer_style"><br>
+<div style="position:absolute;left:0px;font-size:1.5em">
+<div style="margin-bottom:2px">
+<span style="background:white;padding:5px;border-radius:0px 10px 10px 0px;">
+<span id="fb_caption">facebook.com</span>
+<img src="images/social_media/facebook.png" style="width:30px;height:30px;padding-bottom: 2px;cursor:pointer" onclick="toggle_fb()">
+</span>
+</div>
+<div style="font-size: 2px">&nbsp;</div>
+<div>
+<span style="background:white;padding:5px;border-radius:0px 10px 10px 0px">
+<span id="insta_caption">instagram.com</span>
+<img src="images/social_media/instagram.png" style="width:30px;height:30px;padding-bottom: 2px;cursor:pointer" onclick="toggle_insta()">
+</span>
+</div>
+<div style="font-size: 3px">&nbsp;</div>
+<div>
+<span style="background:white;padding:5px;border-radius:0px 10px 10px 0px">
+<span id="twitter_caption">twitter.com</span>
+<img src="images/social_media/twitter.png" style="width:30px;height:30px;padding-bottom: 2px;cursor:pointer" onclick="toggle_twitter()">
+</span>
+</div>
+<div style="font-size: 3px">&nbsp;</div>
+<div>
+<span style="background:white;padding:5px;border-radius:0px 10px 10px 0px">
+<span id="whatsapp_caption">9988776655</span>
+<img src="images/social_media/whatsapp.png" style="width:30px;height:30px;padding-bottom: 2px;cursor:pointer" onclick="toggle_whatsapp()">
+</span>
+</div>
+</div>
+<table class="footer_table">
+<tr>
+<td><a href="register.html"> Register</a></td>
+<td><a href="#">Carrier</a></td>
+</tr>
+<tr>
+<td><a href="about.html">About</a></td>
+<td><a href="#">Services</a></td>
+</tr>
+<tr>
+<td><a href="contact.html">Contact</a></td>
+<td><a href="#">Admissions</a></td>
+</tr>
+</table>
+</div>
+</footer>
+	</body>
+	<script type="text/javascript">
+		
+$(document).ready(function(){
+	$(".main_content").fadeIn(1500);
+	$("#fb_caption").fadeOut();
+				  $("#insta_caption").fadeOut();
+				   $("#twitter_caption").fadeOut();
+				    $("#whatsapp_caption").fadeOut();
+});
+function toggle_fb()
+{
+ $("#fb_caption").fadeToggle();
+}	
+
+function toggle_insta()
+{
+ $("#insta_caption").fadeToggle();
+}	
+function toggle_twitter()
+{
+ $("#twitter_caption").fadeToggle();
+}
+function toggle_whatsapp()
+{
+ $("#whatsapp_caption").fadeToggle();
+}
+	</script>
+</html>

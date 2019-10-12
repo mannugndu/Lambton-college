@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>lambton college</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style_main.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+			<link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+  <script src="libraries/jquery.js"></script>
+  <script src="libraries/js/bootstrap.min.js"></script>
+
+		
+		
+		<style type="text/css">
+			.about_content
+			{
+				width:70%;margin:auto;
+				font-family: Alef;
+				font-size: 1.2em;
+			}
+			.about_content h2
+			{
+				color:#015486;
+			}
+	</style>
+</head>
+	<body style="margin:0px;">
+		<header>
+			<img src="images/logo.jpg" class="logo">
+			<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Lambton College</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       
+        <li class="active"><a href="index.html">Home</a></li>
+
+        <li>
+          <a href="register.html">Register </a>
+          
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <li><a href="about.html">about</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+		</header>
+
+
+		<main class="main_content">
+			<p class="main_p" style="cursor:pointer"><span>&ldquo;</span>About Us<span>&rdquo;</span></p>
+			
+
+
+<div class="about_content">
+	<h2 id="foundation" style="cursor:pointer">About the Foundation</h2>
+	<div id="foundation_data">
+	<p>Since 1966, Lambton College has been committed to helping students succeed in their education, career and life goals.</p>
+
+	<p>
+	The Lambton College Foundation was established as a charitable organization mandated to support Lambton College in achieving its vision of quality, career-focused education and world class specializations, providing the bridge to a global society. A dedicated Board of Directors and staff implement awareness and fund development initiatives to support Lambton College students.	
+	</p>
+
+	<p>
+		Over the past few years, millions of dollars have been raised through generous contributions from community-minded partners. As a result of these donations, more programs and services are available to students, facilities have been built and upgraded, and our graduates are going out in the community better prepared for their careers.
+	</p>
+</div>
+	<h2 id="mission" style="cursor:pointer">Our Mission</h2>
+	<p id="mission_data">
+		Our mission is to support Lambton College’s mission of student and community success through lasting philanthropic relationships and partner investments.
+	</p>
+</div>
+<br>
+<br>
+<br>
+
+
+		</main>
+
+<footer class="footer_style"><br>
+<div style="position:absolute;left:0px;font-size:1.5em">
+<div style="margin-bottom:2px">
+<span style="background:white;padding:5px;border-radius:0px 10px 10px 0px;">
+<span id="fb_caption">facebook.com</span>
+<img src="images/social_media/facebook.png" style="width:30px;height:30px;padding-bottom: 2px;cursor:pointer" onclick="toggle_fb()">
+</span>
+</div>
+<div style="font-size: 2px">&nbsp;</div>
+<div>
+<span style="background:white;padding:5px;border-radius:0px 10px 10px 0px">
+<span id="insta_caption">instagram.com</span>
+<img src="images/social_media/instagram.png" style="width:30px;height:30px;padding-bottom: 2px;cursor:pointer" onclick="toggle_insta()">
+</span>
+</div>
+<div style="font-size: 3px">&nbsp;</div>
+<div>
+<span style="background:white;padding:5px;border-radius:0px 10px 10px 0px">
+<span id="twitter_caption">twitter.com</span>
+<img src="images/social_media/twitter.png" style="width:30px;height:30px;padding-bottom: 2px;cursor:pointer" onclick="toggle_twitter()">
+</span>
+</div>
+<div style="font-size: 3px">&nbsp;</div>
+<div>
+<span style="background:white;padding:5px;border-radius:0px 10px 10px 0px">
+<span id="whatsapp_caption">9988776655</span>
+<img src="images/social_media/whatsapp.png" style="width:30px;height:30px;padding-bottom: 2px;cursor:pointer" onclick="toggle_whatsapp()">
+</span>
+</div>
+</div>
+<table class="footer_table">
+<tr>
+<td><a href="register.html"> Register</a></td>
+<td><a href="#">Carrier</a></td>
+</tr>
+<tr>
+<td><a href="about.html">About</a></td>
+<td><a href="#">Services</a></td>
+</tr>
+<tr>
+<td><a href="contact.html">Contact</a></td>
+<td><a href="#">Admissions</a></td>
+</tr>
+</table>
+</div>
+</footer>
+	</body>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		 $("#fb_caption").fadeOut();
+				  $("#insta_caption").fadeOut();
+				   $("#twitter_caption").fadeOut();
+				    $("#whatsapp_caption").fadeOut();
+
+$("#foundation_data").slideUp(1000);
+$("#mission_data").slideUp(1000);
+
+
+
+		$(".main_p").click(function(){
+			$(".about_content").slideToggle();
+		});
+
+		$("#foundation").click(function(){
+			$("#foundation_data").slideToggle();
+		});
+
+		$("#mission").click(function(){
+			$("#mission_data").slideToggle();
+		});
+	});
+function toggle_fb()
+{
+ $("#fb_caption").fadeToggle();
+}	
+
+function toggle_insta()
+{
+ $("#insta_caption").fadeToggle();
+}	
+function toggle_twitter()
+{
+ $("#twitter_caption").fadeToggle();
+}
+function toggle_whatsapp()
+{
+ $("#whatsapp_caption").fadeToggle();
+}
+</script>
+
+</html>

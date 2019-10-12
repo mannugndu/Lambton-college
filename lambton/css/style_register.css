@@ -1,0 +1,30 @@
+.outer_box
+			{
+				font-family:Alef;text-align:center;background:#dcdcdc;padding:10px;max-width:500px;margin:auto;
+				margin-top:20px;
+				margin-bottom: 20px;
+				box-shadow: 0px 0px 10px 10px #f2f2f2;
+			}
+		input[type="text"], input[type="password"], input[type="email"]
+		{
+			
+			width:70%;
+			padding:15px;
+			margin:10px;
+			
+		}
+		.email_container input, .password_container input, .confirm_password_container input
+		{
+			width: 85%;
+		}
+		.register_button
+		{
+			font-size: 2em;
+			padding:5px;
+			font-family:Amaranth;
+			margin:auto;
+			width:50%;
+			text-align:center;
+			color:white;
+			background-color: #f44336;
+		}
