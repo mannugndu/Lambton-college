@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/lmt5opwr6vd2/repositories/test/
+    - export DEPLOYPATH=/home/lmt5opwr6vd2/public_html/test
     - /bin/cp -r * $DEPLOYPATH
