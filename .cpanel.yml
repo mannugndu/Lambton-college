@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/lmt5opwr6vd2/repositories/test/
-    - /bin cp * $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
