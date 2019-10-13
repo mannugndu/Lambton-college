@@ -1,5 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/lmt5opwr6vd2/repositories/Lambton-college/
-    - /bin/cp index.html $DEPLOYPATH
+    - export DEPLOYPATH=/home/lmt5opwr6vd2/repositories/test/
